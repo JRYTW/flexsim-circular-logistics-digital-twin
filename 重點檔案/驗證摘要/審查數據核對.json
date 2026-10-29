@@ -1,0 +1,36 @@
+{
+  "source": "same V8 native formal DOE; no new simulation and no parameter changes",
+  "main_rows": 1350,
+  "main_over24h_total": 0.0,
+  "main_qtime_loss_total_ntd": 0.0,
+  "max_single_replication_qtime_mean_min": 80.06856543646474,
+  "max_observed_completed_QA_wait_h": 2.918861035026542,
+  "largest_group_mean_qtime": {
+    "scenario": "S1_4.5",
+    "prescription": "P2",
+    "buffer_m": 0.0,
+    "minutes": 42.58359192186939
+  },
+  "S1_P0_qtime_mean_min": 19.71402962162064,
+  "S1_4_5_P0_qtime_mean_min": 42.101526523842494,
+  "S1_to_S0_observation_arrival_ratio": 1.4266042956911318,
+  "S1_P0_energy_per_arrival_kwh": 0.18487514523356652,
+  "S1_P0_carbon_reduction_pct": 73.85337231696703,
+  "S1_P4_12_carbon_reduction_pct": 73.99466097458996,
+  "S1_P4_12_increment_vs_P0_pp": 0.14128865762293685,
+  "S1_P2_8_blocked_pct": {
+    "mean": 7.609040237082326,
+    "low": 6.916753407127133,
+    "high": 8.30132706703752
+  },
+  "S1_P4_8_blocked_pct": {
+    "mean": 0.9505047827257272,
+    "low": 0.7832070756015708,
+    "high": 1.1178024898498837
+  },
+  "P4_8_outsourced_mean": 110.8,
+  "P4_12_outsourced_mean": 84.7,
+  "recommended_service_policy": "P4 12m, conditional on mandatory SLA; no positive financial payback",
+  "backup_policy": "P4 8m, original mean-threshold minimum capex",
+  "circular_use_rate_is_structural": true
+}

@@ -1,27 +1,30 @@
 {
-  "chart_value_checks": [
+  "source": "same V8 formal native data; no rerun",
+  "chart_checks": [
     {
       "chart": "ppt/slides/charts/chart1.xml",
-      "points": 3,
-      "max_rounding_error": 4.6659764185719155e-07,
-      "passed": true
+      "points": 4,
+      "max_rounding_error": 2.681452658803707e-07
     },
     {
       "chart": "ppt/slides/charts/chart2.xml",
-      "points": 3,
-      "max_rounding_error": 3.783793616207731e-07,
-      "passed": true
+      "points": 4,
+      "max_rounding_error": 3.783793616207731e-07
     },
     {
       "chart": "ppt/slides/charts/chart3.xml",
       "points": 12,
-      "max_rounding_error": 4.5367616596792004e-07,
-      "passed": true
+      "max_rounding_error": 4.5367616596792004e-07
     }
   ],
+  "chart_points": 20,
+  "heatmap_values": 28,
+  "heatmap_max_rounding_error": 0.004366925064601901,
   "all_source_data_match": true,
+  "native_tables": 6,
+  "native_charts": 3,
+  "slide_count": 15,
+  "render_engine": "artifact-tool final PPTX reimport",
   "native_PowerPoint_opening_tested": false,
-  "rendered_all_15": true,
-  "visual_review": "15-slide contact sheet; detail review of validation and demo pages; no clipping observed after shortening V10 cell",
-  "render_engine": "artifact-tool final PPTX reimport"
+  "heatmap_scope": "seed101; cumulative start-to-116100s; processing and blocked have distinct color scales"
 }

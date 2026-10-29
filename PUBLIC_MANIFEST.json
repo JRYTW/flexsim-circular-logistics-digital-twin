@@ -14,8 +14,8 @@
     },
     {
       "path": "guide.md",
-      "bytes": 12306,
-      "sha256": "020bec321169c09cca19ebcd6afa35a50aa6fe297bc7f0eefd859274090b53a0"
+      "bytes": 13239,
+      "sha256": "c36c439bd5e090d3be5fc6b2a7bd1d1a7a3702acb3994757a7b3dc53b9872beb"
     },
     {
       "path": "guide_key.md",
@@ -29,13 +29,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 1961,
-      "sha256": "392d9a1578c3396472ec453acfc919eabe7796e4be5d9dd1e22969a3d3e9e320"
+      "bytes": 2313,
+      "sha256": "467dd5c23567408e20578d76cb7bdefae4521e25fb0c0954c84bd05a26d71d9d"
     },
     {
       "path": "SECURITY_REVIEW.md",
-      "bytes": 2515,
-      "sha256": "946785e405ee395137bd71f9163a14bb32eeedec79c22a617b96219381e10af0"
+      "bytes": 2843,
+      "sha256": "847807a33383db93820d45720b930f8f0f143d0787cf56600521f296fbdbc7ed"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -49,38 +49,43 @@
     },
     {
       "path": "重點檔案/01_成果簡報.pptx",
-      "bytes": 3510838,
-      "sha256": "2558dcb9531d4b6047e221847b77e870b554d009d50c466c281950ea38e4f00f"
+      "bytes": 3215871,
+      "sha256": "79119cbf38518c75861a8b8521f7c0450a2a1d7ee1cc8405e1b2d5db038a41aa"
     },
     {
       "path": "重點檔案/02_最終回報.md",
-      "bytes": 3518,
-      "sha256": "39d1126e5a47b021029fac4542f470a8e78b7d2a3c17b764cbd59b96980e93e0"
+      "bytes": 9379,
+      "sha256": "6c2f52c148d5da3f013592d7a53f52221e41bca9cd7a2ae73091eb26c8487ea1"
     },
     {
       "path": "重點檔案/03_信效度報告.md",
-      "bytes": 4809,
-      "sha256": "2587c7e48ad55478339effb70c09d9f13076e32a962e0b5c4170cd6949382d5d"
+      "bytes": 10670,
+      "sha256": "be14396ed71271533e737bd32e7e72ceda0c9723269f6bf18131caf14c581d9e"
     },
     {
       "path": "重點檔案/04_ESG與ROI.md",
-      "bytes": 2246,
-      "sha256": "0373b8146693b60b8d2d10206d8c4585c50c8c5f2f4e792d9e43c88f3ff79233"
+      "bytes": 8107,
+      "sha256": "b9dc4ee4d2f25f541feffff424bbdf7d29322aca502635497ffa7fb46de29466"
     },
     {
       "path": "重點檔案/05_Demo腳本.md",
-      "bytes": 1297,
-      "sha256": "540d165a6343c38f7bba05fbe135daa287c734a08a2517bd780f0226e7423e1d"
+      "bytes": 1465,
+      "sha256": "6fc109fff9b9798810253a65a481d8f3e104906fcec5cc4059f544fcb93ad0c6"
     },
     {
       "path": "重點檔案/06_答辯QA.md",
-      "bytes": 2298,
-      "sha256": "2c455d3cc78450c1c67fec2d861c53797a388ee3e10e0c0e6aa26f6992a9f2c2"
+      "bytes": 3344,
+      "sha256": "bbd2e6bed8b1edd4b797c02fe5ee36601cee532bbe3f94be2e8e6005387b3a88"
+    },
+    {
+      "path": "重點檔案/07_審查修正說明.md",
+      "bytes": 5705,
+      "sha256": "e7543841532b37e8d01d640b6acd3a7edf98727f7e67239a94f854d82c9a7403"
     },
     {
       "path": "重點檔案/guide_key.md",
-      "bytes": 2619,
-      "sha256": "fa0b02610767f3b8b8d3d7385224ae9802f0869d5e60f69bc22b991818fcd152"
+      "bytes": 2820,
+      "sha256": "24d1d58aa548e81a6b0b30a84277c16f0d1147ad0e91f18a8cfc0650685b00a2"
     },
     {
       "path": "重點檔案/圖片/3D全景.png",
@@ -88,12 +93,12 @@
       "sha256": "fac761332e1e440760db1048b0dd76c5660daa154a9ede0da39aa7738580d14a"
     },
     {
-      "path": "重點檔案/圖片/After熱力圖.png",
+      "path": "重點檔案/圖片/After設備著色.png",
       "bytes": 156350,
       "sha256": "fea47a63c91ea09c484852d07a046f78ea84e06be72c2db6d4900eb2cf361b12"
     },
     {
-      "path": "重點檔案/圖片/Before熱力圖.png",
+      "path": "重點檔案/圖片/Before設備著色.png",
       "bytes": 156849,
       "sha256": "cdbbf958ca147857e2fb0e24c7859492491fe3e496a9be7d6433f82670afdb56"
     },
@@ -101,6 +106,11 @@
       "path": "重點檔案/圖片/Dashboard.png",
       "bytes": 101134,
       "sha256": "e996b71289af5b59eeeed3cfd959ba8f3943a97c21ffc0b0627fea54de30a7d9"
+    },
+    {
+      "path": "重點檔案/圖片/設備績效熱圖與儀表比較.png",
+      "bytes": 417104,
+      "sha256": "40d5d6f485b9d91a13b07b817f7854dca77f330a477c025f2038307520c8ecc4"
     },
     {
       "path": "重點檔案/影片/原生3D運行.webm",
@@ -138,6 +148,21 @@
       "sha256": "50e12c8af8187d6918ff08473117c14270334dd040fe51de5ab2b381307cea2b"
     },
     {
+      "path": "重點檔案/組內文件/PM_驗收與風險索引.md",
+      "bytes": 1445,
+      "sha256": "786f7be4d15e16b2ec3ef12c32f0050d7ce419dc85ffff59b57e42ff3e21ed80"
+    },
+    {
+      "path": "重點檔案/組內文件/SA_最終設計與KPI.md",
+      "bytes": 1455,
+      "sha256": "171f8b1566861b7652d98ed80a0c0e5a1dae02b70465000cd0f93abe542f6efb"
+    },
+    {
+      "path": "重點檔案/組內文件/日誌_公開摘錄.md",
+      "bytes": 491850,
+      "sha256": "7b06445218aa4825e2e76467a291738bf4d55d9643615e410fbe536bb8d471e5"
+    },
+    {
       "path": "重點檔案/驗證摘要/Dashboard_ESG重算.json",
       "bytes": 2537,
       "sha256": "d974b288a8836016fa829be631ccd137205a94c1913bf4ef2047d6ec42d6bc90"
@@ -158,6 +183,11 @@
       "sha256": "04cb23c20987543a54c0dec33bb1897f0d0c25522f57b0d91a709c26adebb18e"
     },
     {
+      "path": "重點檔案/驗證摘要/審查數據核對.json",
+      "bytes": 1331,
+      "sha256": "880175abb760d14c04699ed681185e4021745a5d06d266acb62ac1a8fe54a944"
+    },
+    {
       "path": "重點檔案/驗證摘要/導航與調度驗收.json",
       "bytes": 705,
       "sha256": "984a3077cdb0782af7d5d815a928b3aad1737676e82cd2a29aae42e1f39c4376"
@@ -169,8 +199,8 @@
     },
     {
       "path": "重點檔案/驗證摘要/簡報圖表數值核對.json",
-      "bytes": 786,
-      "sha256": "e51fca1007284344b687810e0397e8457b597e855f696aa34c28287e39fd5a8c"
+      "bytes": 876,
+      "sha256": "345df9a3e826eff3811434aca577592805e9ddb2539d17684faf568de4fea7e5"
     }
   ]
 }
