@@ -10,6 +10,8 @@ import sys
 import urllib.parse
 import zipfile
 import zlib
+import gzip
+import sqlite3
 from xml.etree import ElementTree as ET
 
 RULES = {
@@ -88,19 +90,67 @@ def inspect_media(name,data,issues):
             pos=stop
     walk(0,len(data))
 
+
+# Only these individually reviewed native deliverables are permitted.
+NATIVE_FILES = {
+    '模型/循環物流_3D展示.fsm',
+    '模型/改善前_現況.fsm',
+    '模型/改善後_聯合改善12公尺.fsm',
+    '模型/循環物流_實驗完整結果.fsm',
+    '模型/循環物流_實驗完整結果.sqlite',
+}
+
+def inspect_binary_text(name, data, issues, skip_email=False):
+    for encoding in ('utf8','cp950','latin1','utf-16le','utf-16be'):
+        for offset in ((0,1) if encoding.startswith('utf-16') else (0,)):
+            found=[]
+            inspect_text(name, data[offset:].decode(encoding,errors='replace'), found)
+            # IEEE-754 numbers can contain email-shaped bytes. Actual SQLite
+            # text cells and schema are checked separately without this exception.
+            issues.extend(x for x in found if not (skip_email and x['rule']=='email_address'))
+
+def inspect_native(path, name, data, issues):
+    if path.suffix=='.fsm':
+        if not data.startswith(b'flexsimtree\x00'):
+            issues.append({'file':name,'rule':'invalid_native_header'});return
+        try:
+            start=data.index(b'\x1f\x8b\x08')
+            dec=zlib.decompressobj(16+zlib.MAX_WBITS)
+            payload=dec.decompress(data[start:])+dec.flush()
+            if not dec.eof or dec.unused_data:
+                issues.append({'file':name,'rule':'unparsed_native_trailer'})
+            inspect_binary_text(name+'!header',data[:start],issues)
+            inspect_binary_text(name+'!decompressed-tree',payload,issues)
+        except (ValueError,zlib.error):issues.append({'file':name,'rule':'native_decompression_failed'})
+    else:
+        inspect_binary_text(name+'!raw-pages',data,issues,skip_email=True)
+        with sqlite3.connect(path.resolve().as_uri()+'?mode=ro&immutable=1',uri=True) as db:
+            if db.execute('pragma integrity_check').fetchone()[0]!='ok':
+                issues.append({'file':name,'rule':'sqlite_integrity'})
+            if db.execute('pragma freelist_count').fetchone()[0]!=0:
+                issues.append({'file':name,'rule':'sqlite_unused_pages'})
+            for table,sql in db.execute("select name,sql from sqlite_master where type='table'").fetchall():
+                inspect_text(name+'!schema',sql or '',issues)
+                quoted='"'+table.replace('"','""')+'"'
+                for row in db.execute('select * from '+quoted):
+                    for value in row:
+                        if isinstance(value,str):inspect_text(name+'!'+table,value,issues)
+                        elif isinstance(value,bytes):inspect_binary_text(name+'!'+table,value,issues)
+
 def main():
     root=Path(__file__).resolve().parents[1]
     issues=[];files=[];size=0
     for p in sorted(root.rglob('*')):
         if not p.is_file() or any(x in SKIP_DIRS for x in p.relative_to(root).parts):continue
         rel=p.relative_to(root).as_posix()
-        if p.name=='.env' or p.suffix.lower() in BLOCKED_SUFFIXES:
+        if p.name=='.env' or (p.suffix.lower() in BLOCKED_SUFFIXES and rel not in NATIVE_FILES):
             issues.append({'file':rel,'rule':'blocked_file_type'})
-        if p.suffix.lower() not in ALLOWED_SUFFIXES and p.name not in ALLOWED_BASENAMES:
+        if p.suffix.lower() not in ALLOWED_SUFFIXES and p.name not in ALLOWED_BASENAMES and rel not in NATIVE_FILES:
             issues.append({'file':rel,'rule':'unexpected_file_type'})
         b=p.read_bytes();size+=len(b);files.append(rel)
         if len(b)>=100*1024*1024:issues.append({'file':rel,'rule':'github_file_size_limit'})
-        if p.suffix=='.pptx':inspect_office(rel,b,issues)
+        if rel in NATIVE_FILES:inspect_native(p,rel,b,issues)
+        elif p.suffix=='.pptx':inspect_office(rel,b,issues)
         elif p.suffix in {'.md','.csv','.json','.py'} or p.name in ALLOWED_BASENAMES:
             text=b.decode('utf-8-sig')
             if p.resolve()==Path(__file__).resolve():
@@ -117,7 +167,7 @@ def main():
             p=root/row['path']
             if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:
                 issues.append({'file':row['path'],'rule':'manifest_mismatch'})
-    summary={'status':'pass' if not issues else 'fail','files_scanned':len(files),'bytes_scanned':size,'issues':issues,'scope':'allowlisted public package, recursive Office XML and embedded workbooks; not a universal guarantee'}
+    summary={'status':'pass' if not issues else 'fail','files_scanned':len(files),'bytes_scanned':size,'issues':issues,'scope':'allowlisted package, recursive Office XML/workbooks, decompressed native model trees, SQLite schema/text/blob/raw pages; not a universal guarantee'}
     print(json.dumps(summary,ensure_ascii=True,indent=2))
     return 0 if not issues else 1
 

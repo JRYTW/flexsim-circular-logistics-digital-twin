@@ -6,3 +6,5 @@
 *.pptx binary
 *.png binary
 *.webm binary
+*.fsm binary
+*.sqlite binary

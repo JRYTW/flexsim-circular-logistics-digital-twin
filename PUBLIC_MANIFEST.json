@@ -1,21 +1,21 @@
 {
   "version": "v8-public-teaching-results-20261029",
-  "scope": "Reviewed public teaching and simulation results; excludes native models, database, credentials, raw logs and environments.",
+  "scope": "Reviewed teaching results plus four portable native models and paired simulation result database; excludes credentials, raw logs, source environment and original unreviewed archives.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 131,
-      "sha256": "2b9d24c378794e320140401a0776b5665af44384c4a6603bd0cfa812ffe6b388"
+      "bytes": 160,
+      "sha256": "e3beb03d1a4c919beb855900f350390ae58efc041b3c09ec6376bcd5952adfcf"
     },
     {
       "path": ".gitignore",
-      "bytes": 278,
-      "sha256": "bf8bbdfd26023a8dd1a7961c4b183d4a6c11f71c03d24b04442daf6d33a2f6c8"
+      "bytes": 569,
+      "sha256": "c532330cf62e74acbdf0dac7c42d2ee0bcfa272c766d2cced22bf9d2575df0b1"
     },
     {
       "path": "guide.md",
-      "bytes": 16307,
-      "sha256": "c972d41216a6d7f8e14205425ca28160aae4b982b04a5b5b549cc5147f465047"
+      "bytes": 16255,
+      "sha256": "83db7f530814ee3696890b1b88aedeb37fd7e62bd6e9cf697e6cf849b1b08913"
     },
     {
       "path": "guide_key.md",
@@ -29,13 +29,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3960,
-      "sha256": "e87aef042d70059fee930f95f177e8382a9d08b39dde4285ec7758d66a2bb656"
+      "bytes": 4372,
+      "sha256": "40e40e6acd31110905c82a82cae4775a84dad7fadaf8e236b1e7a0bdc65d4391"
     },
     {
       "path": "SECURITY_REVIEW.md",
-      "bytes": 4161,
-      "sha256": "e0c59b8065e2e6db052e1ea0442d253a047b05614e25214af6cf77289378d2d2"
+      "bytes": 5814,
+      "sha256": "26d903b162580f08b5f0f88c5b69de85da2c95778ec99ed65ca92c2a48d4f6e1"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -44,13 +44,48 @@
     },
     {
       "path": "tools/check_public_release.py",
-      "bytes": 6688,
-      "sha256": "5c0f188a2ba8e210c1cf44446d029edb63151015c0ae193d161dd8adaff1dc62"
+      "bytes": 9511,
+      "sha256": "c10e78783cf543c8c1f7c0b8ca44eed1b8649b3687e62e154e50dfeeb47daf3f"
     },
     {
       "path": "名詞與代碼對照.md",
-      "bytes": 12188,
-      "sha256": "4ea4355bffc86851388c96a2097f09a78349350bd62784b3b1963afcdb5289f6"
+      "bytes": 12206,
+      "sha256": "7abc81f9affaef09bda5a0fe7cbd606eb061165a96cbe5889ea69101dcf9459d"
+    },
+    {
+      "path": "模型/experiment_exports/README.md",
+      "bytes": 442,
+      "sha256": "8ca1f027d140f0202fa9930290347db12ce0662c1a602968f4dd385aef561414"
+    },
+    {
+      "path": "模型/README.md",
+      "bytes": 3911,
+      "sha256": "db75d82057362437908b6cb8958769f6dd6fed0f6d2e37aeafee34df907362ac"
+    },
+    {
+      "path": "模型/循環物流_3D展示.fsm",
+      "bytes": 335932,
+      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+    },
+    {
+      "path": "模型/循環物流_實驗完整結果.fsm",
+      "bytes": 180718,
+      "sha256": "413ecc0b0a8da1ea4332dbf48118cffa6181b7f11fdd55cea45af85d9fc86d5a"
+    },
+    {
+      "path": "模型/循環物流_實驗完整結果.sqlite",
+      "bytes": 2760704,
+      "sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e"
+    },
+    {
+      "path": "模型/改善前_現況.fsm",
+      "bytes": 339160,
+      "sha256": "2f5a5a1ea84dffad3b7b311fdc90641920c7c7f579b821c73629c35d32dc63a7"
+    },
+    {
+      "path": "模型/改善後_聯合改善12公尺.fsm",
+      "bytes": 335932,
+      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
     },
     {
       "path": "重點檔案/01_成果簡報.pptx",
@@ -89,8 +124,8 @@
     },
     {
       "path": "重點檔案/guide_key.md",
-      "bytes": 4689,
-      "sha256": "03e82aac3c4c8a3ddd0b91838e611210edc42fec2dbd5f5c190e41d2d787e59a"
+      "bytes": 4748,
+      "sha256": "ce72ab7995839db039c87164e5cc2157a18534c1c2542e70247fa5535ad0380c"
     },
     {
       "path": "重點檔案/圖片/3D全景.png",
@@ -199,8 +234,13 @@
     },
     {
       "path": "重點檔案/驗證摘要/README.md",
-      "bytes": 1139,
-      "sha256": "589a33b1cd08d152777525e156b9e907ec35cdc7d822ec468c76735f6e84e55b"
+      "bytes": 1782,
+      "sha256": "c962afab21feb03617081e28be3fd76e134ff2acb3bc1b13421aad89bca592ba"
+    },
+    {
+      "path": "重點檔案/驗證摘要/公開模型驗收.json",
+      "bytes": 4551,
+      "sha256": "68b99609245ebdc7be3851ea043c9a7170879dae6f791c1ea1b00277885dee98"
     },
     {
       "path": "重點檔案/驗證摘要/原生PFM重算比對.json",

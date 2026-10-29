@@ -1,0 +1,191 @@
+{
+  "status": "pass",
+  "model_version": "V8_TRANSFER_SYNC_ADMISSION_POOL",
+  "scope": "Four portable native FlexSim models and one paired result database. Sanitized output paths; unchanged simulation physics and formal results.",
+  "native_files": [
+    {
+      "file": "循環物流_3D展示.fsm",
+      "decoded_bytes": 4385489,
+      "issues": [],
+      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+    },
+    {
+      "file": "循環物流_實驗完整結果.fsm",
+      "decoded_bytes": 2564298,
+      "issues": [],
+      "sha256": "413ecc0b0a8da1ea4332dbf48118cffa6181b7f11fdd55cea45af85d9fc86d5a"
+    },
+    {
+      "file": "循環物流_實驗完整結果.sqlite",
+      "decoded_bytes": 2760704,
+      "issues": [],
+      "sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e"
+    },
+    {
+      "file": "改善前_現況.fsm",
+      "decoded_bytes": 4439652,
+      "issues": [],
+      "sha256": "2f5a5a1ea84dffad3b7b311fdc90641920c7c7f579b821c73629c35d32dc63a7"
+    },
+    {
+      "file": "改善後_聯合改善12公尺.fsm",
+      "decoded_bytes": 4385489,
+      "issues": [],
+      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+    }
+  ],
+  "regression": {
+    "scenario": "S1 short daily peaks",
+    "policies": [
+      "P0 existing, 1 metre original buffer",
+      "P4 joint control, 12 metre buffer"
+    ],
+    "random_seed": 101,
+    "checkpoints_seconds": [
+      86400,
+      604800
+    ],
+    "original_vs_portable_exact_equal": true,
+    "numeric_values_compared": 58000,
+    "readbacks": [
+      "MeasureRun",
+      "MeasureValidationV8",
+      "MeasurePoolV8"
+    ],
+    "new_runtime_console_output": false,
+    "note": "SDK session already contained model-switch save reminders; runtime console did not increase. Separate fresh GUI processes had empty consoles."
+  },
+  "fresh_gui": {
+    "demo_time_seconds": 116100,
+    "dashboard_fields": 40,
+    "native_3d_capture_created": true,
+    "console_empty": true,
+    "main_experiments_complete": 1350,
+    "additional_precision_complete": 570,
+    "precision_preview_including_reused": 600,
+    "performance_measures": 9
+  },
+  "database_tables_all_rows_and_values_identical": [
+    {
+      "table": "__experiment_results__",
+      "rows": 1,
+      "identical": true
+    },
+    {
+      "table": "parameters",
+      "rows": 5,
+      "identical": true
+    },
+    {
+      "table": "scenarios",
+      "rows": 45,
+      "identical": true
+    },
+    {
+      "table": "parameter_values",
+      "rows": 225,
+      "identical": true
+    },
+    {
+      "table": "tasks",
+      "rows": 1920,
+      "identical": true
+    },
+    {
+      "table": "jobs",
+      "rows": 2,
+      "identical": true
+    },
+    {
+      "table": "runs",
+      "rows": 2,
+      "identical": true
+    },
+    {
+      "table": "run_task_history",
+      "rows": 1950,
+      "identical": true
+    },
+    {
+      "table": "job_task_status",
+      "rows": 1920,
+      "identical": true
+    },
+    {
+      "table": "id_paths",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "output_tables",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "table_columns",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "color_palettes",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "statistics",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "statistics_data",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "state_files",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "pfms",
+      "rows": 9,
+      "identical": true
+    },
+    {
+      "table": "pfm_report_preferences",
+      "rows": 9,
+      "identical": true
+    },
+    {
+      "table": "pfm_report_correlations",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "pfm_values",
+      "rows": 17280,
+      "identical": true
+    },
+    {
+      "table": "console_output",
+      "rows": 1920,
+      "identical": true
+    },
+    {
+      "table": "filters",
+      "rows": 0,
+      "identical": true
+    },
+    {
+      "table": "filter_results",
+      "rows": 0,
+      "identical": true
+    }
+  ],
+  "limitations": [
+    "Rule-based privacy checks are not a universal guarantee.",
+    "Requires a separately licensed FlexSim 2027 installation.",
+    "No new formal DOE results; regression checks do not increase the published 1920 unique experiments.",
+    "No field calibration or positive investment-return claim is added."
+  ]
+}

@@ -11,3 +11,7 @@ JSON是供程式讀取的結構化資料。先讀[名詞與驗證編號](../../�
 - `簡報圖表數值核對.json`／`審查數據核對.json`：簡報數字與審查敘事對照。
 
 常見欄名：`mean`平均、`low/high`信賴下界／上界、`n`樣本數、`pass`通過、`relative_halfwidth_pct`相對信賴半寬（百分比）、`max_abs_difference`最大絕對差。任何「通過」都只在檔案敘明的樣本和判定範圍成立。
+
+## 公開模型驗收
+
+[公開模型驗收.json](公開模型驗收.json)記錄四個原生模型、同名結果資料庫的安全掃描、公開前後七天數值比對，以及全新FlexSim視窗的實際開啟結果。`regression`是同種子重跑核對，`checkpoints_seconds`是檢查時刻（秒），`numeric_values_compared`是逐項比對的數值數量，`fresh_gui`是全新軟體視窗驗收；`main_experiments_complete`為1350次主實驗，`additional_precision_complete`為570次新增精度實驗。資料庫各表的`rows`為列數，`identical`表示每個值均與原件相同；`sha256`是檔案指紋，不是金鑰。
