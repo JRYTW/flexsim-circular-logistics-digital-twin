@@ -1,0 +1,20 @@
+{
+  "frame_count": 3600,
+  "unique_frame_sha256_count": 3600,
+  "trace_rows": 3600,
+  "monotonic_simulation_time": true,
+  "start_simulation_s": 115500.0,
+  "end_simulation_s": 118834.99000000174,
+  "simulation_span_s": 3334.990000001737,
+  "video": {
+    "initial_duration": "330.752",
+    "duration_seconds": 330.752,
+    "seeked_time": 330.752,
+    "width": 1600,
+    "height": 900,
+    "ready_state": 4,
+    "error": null
+  },
+  "video_sha256": "61a621ca6f95cd7c8dd5331454ba680cd1eb4965d02b1ab4642be30c6624075c",
+  "claim": "Native viewtofile 3D frames; not full-desktop screen recording. Original native frames and timestamps preserved."
+}

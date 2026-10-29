@@ -1,0 +1,26 @@
+# Defense in depth: the repository contains only reviewed release content.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.db
+*.fsm
+*.fsx
+*.log
+*.bak
+*_autosave.*
+.aws/
+.azure/
+.ssh/
+.codex/
+.venv/
+venv/
+node_modules/
+__pycache__/
+config.local.*
+credentials*
+*.tmp
