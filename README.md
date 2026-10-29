@@ -1,6 +1,6 @@
 # FlexSim Circular Logistics Digital Twin
 
-循環箱逆向物流數位分身：給第一次接觸專案的組員與讀者看的公開成果包。以繁體中文說明，適合大一程度閱讀。
+循環箱逆向物流數位分身：給第一次接觸專案的讀者看的公開成果包。
 
 **先讀 [guide.md](guide.md)**；時間有限則讀 [精華 guide_key.md](重點檔案/guide_key.md)。
 
