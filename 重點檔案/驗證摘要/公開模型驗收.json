@@ -5,15 +5,15 @@
   "native_files": [
     {
       "file": "循環物流_3D展示.fsm",
-      "decoded_bytes": 4385489,
+      "decoded_bytes": 4463727,
       "issues": [],
-      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+      "sha256": "aa142a3a153317cff7752525177709927f69fbf71968948f54d0d7669d6d1adb"
     },
     {
       "file": "循環物流_實驗完整結果.fsm",
-      "decoded_bytes": 2564298,
+      "decoded_bytes": 2642536,
       "issues": [],
-      "sha256": "413ecc0b0a8da1ea4332dbf48118cffa6181b7f11fdd55cea45af85d9fc86d5a"
+      "sha256": "9874f77c9bb33af8dd6c976b6f80c9cd4e041d884049f193b36d8c58bdbb3c4c"
     },
     {
       "file": "循環物流_實驗完整結果.sqlite",
@@ -23,15 +23,15 @@
     },
     {
       "file": "改善前_現況.fsm",
-      "decoded_bytes": 4439652,
+      "decoded_bytes": 4517890,
       "issues": [],
-      "sha256": "2f5a5a1ea84dffad3b7b311fdc90641920c7c7f579b821c73629c35d32dc63a7"
+      "sha256": "f14d7c47f8764c19f5930d23cb2412d54418a3f2236e00a1be1f1f8e7dfbf52a"
     },
     {
       "file": "改善後_聯合改善12公尺.fsm",
-      "decoded_bytes": 4385489,
+      "decoded_bytes": 4463727,
       "issues": [],
-      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+      "sha256": "fecc2dbc56904cda82bc46d57bf397a5b6e63b2a76e959550243e9d8b3b43610"
     }
   ],
   "regression": {
@@ -187,5 +187,6 @@
     "Requires a separately licensed FlexSim 2027 installation.",
     "No new formal DOE results; regression checks do not increase the published 1920 unique experiments.",
     "No field calibration or positive investment-return claim is added."
-  ]
+  ],
+  "visual_revision": "V9 中文場景，2026-10-30；另見中文場景更新驗收.json。計算版本仍為V8。"
 }

@@ -14,8 +14,8 @@
     },
     {
       "path": "guide.md",
-      "bytes": 16924,
-      "sha256": "71510c5b45de173baf42c189032cab63b604591f9eec2b798f35927757b0a13e"
+      "bytes": 17249,
+      "sha256": "0c21400fb39a83ba7d325f23226a7cd87f2199a3e8217169d15aed724fae47bc"
     },
     {
       "path": "guide_key.md",
@@ -29,13 +29,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4541,
-      "sha256": "2de01eee5bb2b6212e4bebc497c1f751fae15a9d3263bef19157cfa5825b4bea"
+      "bytes": 3579,
+      "sha256": "4ab308a099a577b150bf88befed32c4212de0690bebb73210223afd74a9ad1b2"
     },
     {
       "path": "SECURITY_REVIEW.md",
-      "bytes": 5702,
-      "sha256": "36ac206a8c03a5555d5d25865447ad41beb22cf62d28f88c8627332d929ea4da"
+      "bytes": 6119,
+      "sha256": "26e3cf011d166325be6d4a5937130b0f65a9f3ef9f60928d19172e17617b0972"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -59,18 +59,18 @@
     },
     {
       "path": "模型/README.md",
-      "bytes": 3986,
-      "sha256": "21f5ec22619236a7e45e2dc1298c0e1b067957f899ee8f3ae7abb880a05ce7bb"
+      "bytes": 6205,
+      "sha256": "7bb64bf6fce712298ecc383ab78104dfaf881b6ed1394d0344f8b8d82579fc19"
     },
     {
       "path": "模型/循環物流_3D展示.fsm",
-      "bytes": 335932,
-      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+      "bytes": 340475,
+      "sha256": "aa142a3a153317cff7752525177709927f69fbf71968948f54d0d7669d6d1adb"
     },
     {
       "path": "模型/循環物流_實驗完整結果.fsm",
-      "bytes": 180718,
-      "sha256": "413ecc0b0a8da1ea4332dbf48118cffa6181b7f11fdd55cea45af85d9fc86d5a"
+      "bytes": 185254,
+      "sha256": "9874f77c9bb33af8dd6c976b6f80c9cd4e041d884049f193b36d8c58bdbb3c4c"
     },
     {
       "path": "模型/循環物流_實驗完整結果.sqlite",
@@ -79,13 +79,13 @@
     },
     {
       "path": "模型/改善前_現況.fsm",
-      "bytes": 339160,
-      "sha256": "2f5a5a1ea84dffad3b7b311fdc90641920c7c7f579b821c73629c35d32dc63a7"
+      "bytes": 343629,
+      "sha256": "f14d7c47f8764c19f5930d23cb2412d54418a3f2236e00a1be1f1f8e7dfbf52a"
     },
     {
       "path": "模型/改善後_聯合改善12公尺.fsm",
-      "bytes": 335932,
-      "sha256": "da0172ffdddb1f3cf4ee4cc07c13d0ec46a2eb9ad9769218d007ce6676913357"
+      "bytes": 340405,
+      "sha256": "fecc2dbc56904cda82bc46d57bf397a5b6e63b2a76e959550243e9d8b3b43610"
     },
     {
       "path": "重點檔案/01_成果簡報.pptx",
@@ -124,8 +124,8 @@
     },
     {
       "path": "重點檔案/guide_key.md",
-      "bytes": 5073,
-      "sha256": "62394097a1594207706f1f698353baa1da05a220e3f6c0fb0be5839d9a8713ab"
+      "bytes": 5401,
+      "sha256": "824e8926cca1845dc6d0990846c638b2207461f3dd5937d80baa9feaaffd107d"
     },
     {
       "path": "重點檔案/圖片/3D全景.png",
@@ -213,6 +213,16 @@
       "sha256": "2527c5e7c212bd48670a2f83f3df1ac0caa99eca2949d63ff6a95c4a04eaed6d"
     },
     {
+      "path": "重點檔案/模型畫面/場景總覽.png",
+      "bytes": 192808,
+      "sha256": "addd364d250313bc6acb31365d2698c8498b4bf98c98282994b3fd990d965a98"
+    },
+    {
+      "path": "重點檔案/模型畫面/檢驗與清洗近景.png",
+      "bytes": 464669,
+      "sha256": "5d6b04c3504a986855f5ffea3471582ade1f7e9ec84836d0dce8e67f88ea1932"
+    },
+    {
       "path": "重點檔案/組內文件/PM_驗收與風險索引.md",
       "bytes": 3364,
       "sha256": "a9c208ee40e27606d51f4e4000be083f054be3242c68d8b25fa58a31e77f0a76"
@@ -243,9 +253,14 @@
       "sha256": "ab41472d6cc8560b277b472880b9ead5390b7dd3fa05051a538ded2812f7de3a"
     },
     {
+      "path": "重點檔案/驗證摘要/中文場景更新驗收.json",
+      "bytes": 1921,
+      "sha256": "da9600cdde7652fcfcb01a100a12951dd39df402f3a6c4ead59c46d777b7e51e"
+    },
+    {
       "path": "重點檔案/驗證摘要/公開模型驗收.json",
-      "bytes": 4551,
-      "sha256": "68b99609245ebdc7be3851ea043c9a7170879dae6f791c1ea1b00277885dee98"
+      "bytes": 4668,
+      "sha256": "e1f4ebea990b906def74b947066358bccfcf78e8b57c06663f928b06e7337806"
     },
     {
       "path": "重點檔案/驗證摘要/原生PFM重算比對.json",
