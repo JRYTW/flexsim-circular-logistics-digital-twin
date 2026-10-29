@@ -44,5 +44,6 @@
     "績效指標數": 9,
     "主控台訊息數": 0,
     "同名結果資料庫保持原檔": true
-  }
+  },
+  "historical_scope": "V9 display / V8 physics only; superseded by V10 static model review. Source repository commit ddea3114a15859f46f19c29b06d9401617974df5."
 }

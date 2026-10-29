@@ -1,6 +1,6 @@
 {
-  "version": "v8-public-teaching-results-20261029",
-  "scope": "Reviewed teaching results plus four portable native models and paired simulation result database; excludes credentials, raw logs, source environment and original unreviewed archives.",
+  "version": "v10-static-physical-layout-with-historical-v8-results-20261030",
+  "scope": "Four V10 physical-route models reviewed statically at time zero; one preserved historical V8 model/database pair; V8 reports, data, deck and video remain historical. No completed V10 formal experiment results are claimed. Excludes credentials, raw logs and local environment.",
   "files": [
     {
       "path": ".gitattributes",
@@ -9,18 +9,18 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 569,
-      "sha256": "c532330cf62e74acbdf0dac7c42d2ee0bcfa272c766d2cced22bf9d2575df0b1"
+      "bytes": 605,
+      "sha256": "91da88966e026050732cc9c38d3c7fb2038adeaeacbc1dba51203b90c4cc407f"
     },
     {
       "path": "guide.md",
-      "bytes": 17249,
-      "sha256": "0c21400fb39a83ba7d325f23226a7cd87f2199a3e8217169d15aed724fae47bc"
+      "bytes": 17759,
+      "sha256": "f0e86e78bd6c9471ec7b3225ce194e538bf7a65b01f3d780d02de9566ff6fa9f"
     },
     {
       "path": "guide_key.md",
-      "bytes": 641,
-      "sha256": "1454f1713aec2aa98cf544fc1be3619bea6a58144bc947aa2b95e4bd38bafe94"
+      "bytes": 1122,
+      "sha256": "3ca5d084ed6182eea509741ca6332663ecd2ac850b53942d3da831ecf6b27661"
     },
     {
       "path": "LICENSE",
@@ -29,13 +29,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3579,
-      "sha256": "4ab308a099a577b150bf88befed32c4212de0690bebb73210223afd74a9ad1b2"
+      "bytes": 4156,
+      "sha256": "9def941f2e5d750603e42d43020625a922df71f12392f74a61d8a1e35c7b321e"
     },
     {
       "path": "SECURITY_REVIEW.md",
-      "bytes": 6119,
-      "sha256": "26e3cf011d166325be6d4a5937130b0f65a9f3ef9f60928d19172e17617b0972"
+      "bytes": 7017,
+      "sha256": "965c310c68c7b847a9e80b8ea48a9f4c3bcec5dab35ed51bd29903916a9ded14"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "tools/check_public_release.py",
-      "bytes": 9511,
-      "sha256": "c10e78783cf543c8c1f7c0b8ca44eed1b8649b3687e62e154e50dfeeb47daf3f"
+      "bytes": 9553,
+      "sha256": "e9a0376a8705e59d644f1d81df968a6d234dd61f2137e89f1aa068768e605e05"
     },
     {
       "path": "名詞與代碼對照.md",
@@ -59,33 +59,38 @@
     },
     {
       "path": "模型/README.md",
-      "bytes": 6205,
-      "sha256": "7bb64bf6fce712298ecc383ab78104dfaf881b6ed1394d0344f8b8d82579fc19"
+      "bytes": 4655,
+      "sha256": "0d107279d7a1775bd9fb124411e1e87dbb48d00b9d18a3a561bc649b78d95122"
     },
     {
       "path": "模型/循環物流_3D展示.fsm",
-      "bytes": 340475,
-      "sha256": "aa142a3a153317cff7752525177709927f69fbf71968948f54d0d7669d6d1adb"
+      "bytes": 238903,
+      "sha256": "f3c349a4b5b13d99e655527f996b40b8be937665da1869e75457a3fba7c9b180"
     },
     {
       "path": "模型/循環物流_實驗完整結果.fsm",
+      "bytes": 238901,
+      "sha256": "8b269b39a72f03550445ef687bd98ec4f4989ad6274669d9fdfb9f40c7dbacf7"
+    },
+    {
+      "path": "模型/改善前_現況.fsm",
+      "bytes": 238852,
+      "sha256": "8f4f4feb24361b628d3069d7b44bfe5427d1a80aad36299bca472c91a42f3b87"
+    },
+    {
+      "path": "模型/改善後_聯合改善12公尺.fsm",
+      "bytes": 238872,
+      "sha256": "600bf527ad5eeed31c0730eb626063f6420214c019d9283e5948b390686c7967"
+    },
+    {
+      "path": "模型/歷史V8_實驗完整結果.fsm",
       "bytes": 185254,
       "sha256": "9874f77c9bb33af8dd6c976b6f80c9cd4e041d884049f193b36d8c58bdbb3c4c"
     },
     {
-      "path": "模型/循環物流_實驗完整結果.sqlite",
+      "path": "模型/歷史V8_實驗完整結果.sqlite",
       "bytes": 2760704,
       "sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e"
-    },
-    {
-      "path": "模型/改善前_現況.fsm",
-      "bytes": 343629,
-      "sha256": "f14d7c47f8764c19f5930d23cb2412d54418a3f2236e00a1be1f1f8e7dfbf52a"
-    },
-    {
-      "path": "模型/改善後_聯合改善12公尺.fsm",
-      "bytes": 340405,
-      "sha256": "fecc2dbc56904cda82bc46d57bf397a5b6e63b2a76e959550243e9d8b3b43610"
     },
     {
       "path": "重點檔案/01_成果簡報.pptx",
@@ -94,38 +99,43 @@
     },
     {
       "path": "重點檔案/02_最終回報.md",
-      "bytes": 13842,
-      "sha256": "2620788a2672a2ee0b1aa5fd5362d42a11ac5c5948e4fea246267735dcaf4f9c"
+      "bytes": 14076,
+      "sha256": "3f1e38c40e93fa0e504c94ad5406bbbe5fa1fa358a4e6c758a885cf7b2e46e00"
     },
     {
       "path": "重點檔案/03_信效度報告.md",
-      "bytes": 15045,
-      "sha256": "f83de631f671e02def72f8798575fbef4871c742760c715222a930482eb9b2d0"
+      "bytes": 15279,
+      "sha256": "22768acee5ba8e0ad4068118a38f8faf279428ab68b71182e96f5721117c224e"
     },
     {
       "path": "重點檔案/04_ESG與ROI.md",
-      "bytes": 12088,
-      "sha256": "e183946c1ecb87dcc7f8fe536f7f64bb9e0d0a6186f371e31e4f4ce7394819c8"
+      "bytes": 12322,
+      "sha256": "365684f491448ff85087f3693aa8565c0361ea96a719a902e2a56887efa3a169"
     },
     {
       "path": "重點檔案/05_Demo腳本.md",
-      "bytes": 3412,
-      "sha256": "3d2378f1cbc2a833eaec9074e1c84deb34dbe7905b105d508cd4ccf6b83bc2d7"
+      "bytes": 3646,
+      "sha256": "fdc12621538982d53ee157e5d514de83520db49c03755f6d48a73682c615a8b3"
     },
     {
       "path": "重點檔案/06_答辯QA.md",
-      "bytes": 5647,
-      "sha256": "699214c448a80f1ad64d624a68e27e3585900bee8b7ba67941a46dc34a1daf00"
+      "bytes": 5881,
+      "sha256": "393fc557d1da75abf1c0aeb8d427dac8c63ce149ba064816cb9158b600cbf142"
     },
     {
       "path": "重點檔案/07_審查修正說明.md",
-      "bytes": 9146,
-      "sha256": "e0908db949d16b4f30c07aa0bfc96259542e1bb14f1bef2f33d9968e3d3cb842"
+      "bytes": 9380,
+      "sha256": "30e0f4e9c5cfed5770257d251780341571dcb0610216f4c2d27c0ed6107c9dfd"
+    },
+    {
+      "path": "重點檔案/08_V10實體修正與多視角檢查.md",
+      "bytes": 5267,
+      "sha256": "6bbe5c6ea7c586fede826ed934120fe06978d0cf2f6079e505292a78886ea5d9"
     },
     {
       "path": "重點檔案/guide_key.md",
-      "bytes": 5401,
-      "sha256": "824e8926cca1845dc6d0990846c638b2207461f3dd5937d80baa9feaaffd107d"
+      "bytes": 5901,
+      "sha256": "6222062442f3be27370caf50a4168d93dbc2075cc26fb6c7c0cb69d334d9cba0"
     },
     {
       "path": "重點檔案/圖片/3D全景.png",
@@ -149,8 +159,8 @@
     },
     {
       "path": "重點檔案/圖片/README.md",
-      "bytes": 863,
-      "sha256": "38ae56f87c075c3a23bce51d490e4eb0b51d7030528bf04ea1c8c3c560a71a15"
+      "bytes": 1097,
+      "sha256": "118319d20fa2fd77cf0b2b7a3e294ee2baf1fb98d6ef286681b4b3b3c07ac154"
     },
     {
       "path": "重點檔案/圖片/設備績效熱圖與儀表比較.png",
@@ -159,8 +169,8 @@
     },
     {
       "path": "重點檔案/影片/README.md",
-      "bytes": 603,
-      "sha256": "bf482f2cea58de19532f9f4a2a83d53e158b6cc865b9d10f1689e0ff941a7b2d"
+      "bytes": 837,
+      "sha256": "9b3f8faf99d65d4a8fb7dcb90b760f3bc6efc3512ffdf6c7644620672d1769c7"
     },
     {
       "path": "重點檔案/影片/原生3D運行.webm",
@@ -189,8 +199,8 @@
     },
     {
       "path": "重點檔案/數據/README.md",
-      "bytes": 549,
-      "sha256": "5ec585570b683afdd4c29042fd233b50a6c26ef8e6f919e36b84532a5cb82474"
+      "bytes": 783,
+      "sha256": "f2331687b17a364f256077989789b91a979f962a9019656c8a8697134baac4d1"
     },
     {
       "path": "重點檔案/數據/基準精度600次_v8.csv",
@@ -209,8 +219,63 @@
     },
     {
       "path": "重點檔案/數據/欄位說明.md",
-      "bytes": 8536,
-      "sha256": "2527c5e7c212bd48670a2f83f3df1ac0caa99eca2949d63ff6a95c4a04eaed6d"
+      "bytes": 8770,
+      "sha256": "ba0fe431dd43cdcf6b7af1f892e992ea204ea9b938b713f3b7af69cd9417ce44"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/01_全景.png",
+      "bytes": 218542,
+      "sha256": "5930c566462505a4d7424642aef95477e8a64f70bbbfee0097eac27806f51804"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/02_正面低視角.png",
+      "bytes": 87842,
+      "sha256": "1f78ff9696eb28bb640c80b4f291989b693f7238d506fbf2be875fea2d26701a"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/03_右側低視角.png",
+      "bytes": 233274,
+      "sha256": "f2eaf26c82558f855cd6d95900c0c3aa29ad7b43cd9abb921f1b1cc68f557d70"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/04_後方斜視.png",
+      "bytes": 164637,
+      "sha256": "a8306d35cac1ef36087e6636d25079bf5bab4a903161b6010bde6a662e958686"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/05_左側低視角.png",
+      "bytes": 244926,
+      "sha256": "63e4e3276ba6083b371bfe2591f9deb74879d33f8048e0fbb912bd1fbd5957cd"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/06_俯視.png",
+      "bytes": 253985,
+      "sha256": "4e3d0d93034729c0e482cf7e64ab961497952203b333c66d0b270b4ff74c9fb6"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/07_分級交接近景.png",
+      "bytes": 790671,
+      "sha256": "aab59195d9569d957c2d45dfcc97d4da64ea021c3c56672f92f4391eb9b194b8"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/08_包裝交接近景.png",
+      "bytes": 545677,
+      "sha256": "708f56cc6e0d73047924b0fa155a226f19e84181433acd28223457dfc98ad027"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/09_分級與合流剖視.png",
+      "bytes": 702550,
+      "sha256": "3c65d184563b7b71d3156e4fa586d7c5470034ec4a330f724db53415acc7057c"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/10_上層交接近景.png",
+      "bytes": 816394,
+      "sha256": "4a88b5a802fcebdc3b10f0a33df09351b6ce8c7be273e7db7234c3f9b223bc20"
+    },
+    {
+      "path": "重點檔案/模型畫面/V10_多視角檢查/README.md",
+      "bytes": 812,
+      "sha256": "d62277b7ef7d031cb7ab3d7f9548f9b0c95ca7e16b003ca1a5dd7ae7e52c9a42"
     },
     {
       "path": "重點檔案/模型畫面/場景總覽.png",
@@ -224,18 +289,18 @@
     },
     {
       "path": "重點檔案/組內文件/PM_驗收與風險索引.md",
-      "bytes": 3364,
-      "sha256": "a9c208ee40e27606d51f4e4000be083f054be3242c68d8b25fa58a31e77f0a76"
+      "bytes": 3598,
+      "sha256": "efeb33e2b2ca8f3276bee69c981d3ed6a877020b332d51c3575c3035f6b848b6"
     },
     {
       "path": "重點檔案/組內文件/SA_最終設計與KPI.md",
-      "bytes": 3315,
-      "sha256": "1847634b2b9f48097cae461e438ac9206898a8d46ebeceb8669f3feb45bdc41f"
+      "bytes": 3549,
+      "sha256": "f8ea7d3fde674f67ec3a5c5f85dae7d05cdd4f83708741dc178757891c668d0f"
     },
     {
       "path": "重點檔案/組內文件/日誌_公開摘錄.md",
-      "bytes": 3853,
-      "sha256": "4ce42b19c5f41545633dc0d3ab655bd22b378c7d1c7233372244b86d53d1e0c5"
+      "bytes": 4779,
+      "sha256": "787bb4390cd88bb3c9c2849e60d94b58076fc4c484b3b5e4a5b7a1c676cbf3ee"
     },
     {
       "path": "重點檔案/驗證摘要/Dashboard_ESG重算.json",
@@ -244,8 +309,13 @@
     },
     {
       "path": "重點檔案/驗證摘要/README.md",
-      "bytes": 2224,
-      "sha256": "de4acfe508eed3170026d72672dc0724c51dafa0369d769b9861ed5d909c056c"
+      "bytes": 2458,
+      "sha256": "b16bb0caef6aedd4170d45b9bd82b936b227e0be473474a07be8bd5beac80fab"
+    },
+    {
+      "path": "重點檔案/驗證摘要/V10_輸送帶幾何檢查.json",
+      "bytes": 13266,
+      "sha256": "b1a408e881cf6d2c9213e1619c8824abac645bd85de3601c10dcc1ab130decef"
     },
     {
       "path": "重點檔案/驗證摘要/中文名稱代號核對.json",
@@ -254,13 +324,13 @@
     },
     {
       "path": "重點檔案/驗證摘要/中文場景更新驗收.json",
-      "bytes": 1921,
-      "sha256": "da9600cdde7652fcfcb01a100a12951dd39df402f3a6c4ead59c46d777b7e51e"
+      "bytes": 2082,
+      "sha256": "d41d59f5fc586de4d61a344e36274c2f43d19bfd3281b26c041825def0cda6ad"
     },
     {
       "path": "重點檔案/驗證摘要/公開模型驗收.json",
-      "bytes": 4668,
-      "sha256": "e1f4ebea990b906def74b947066358bccfcf78e8b57c06663f928b06e7337806"
+      "bytes": 4300,
+      "sha256": "ee923608079d056c5e0b41a5af59b42de9cb09215589fa1a21affe30ed2c1a3a"
     },
     {
       "path": "重點檔案/驗證摘要/原生PFM重算比對.json",

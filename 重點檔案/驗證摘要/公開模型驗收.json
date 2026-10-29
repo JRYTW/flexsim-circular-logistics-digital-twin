@@ -1,192 +1,149 @@
 {
-  "status": "pass",
-  "model_version": "V8_TRANSFER_SYNC_ADMISSION_POOL",
-  "scope": "Four portable native FlexSim models and one paired result database. Sanitized output paths; unchanged simulation physics and formal results.",
+  "status": "static_review_pass",
+  "date": "2026-10-30",
+  "model_version": "V10_PHYSICAL_ROUTES",
+  "scope": "Four V10 models at time zero, five workers and 27 native conveyors; one unchanged historical V8 native model/database pair. Static inspection only after the stop request.",
   "native_files": [
     {
       "file": "循環物流_3D展示.fsm",
-      "decoded_bytes": 4463727,
-      "issues": [],
-      "sha256": "aa142a3a153317cff7752525177709927f69fbf71968948f54d0d7669d6d1adb"
-    },
-    {
-      "file": "循環物流_實驗完整結果.fsm",
-      "decoded_bytes": 2642536,
-      "issues": [],
-      "sha256": "9874f77c9bb33af8dd6c976b6f80c9cd4e041d884049f193b36d8c58bdbb3c4c"
-    },
-    {
-      "file": "循環物流_實驗完整結果.sqlite",
-      "decoded_bytes": 2760704,
-      "issues": [],
-      "sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e"
+      "sha256": "f3c349a4b5b13d99e655527f996b40b8be937665da1869e75457a3fba7c9b180",
+      "bytes": 238903,
+      "privacy_issues": []
     },
     {
       "file": "改善前_現況.fsm",
-      "decoded_bytes": 4517890,
-      "issues": [],
-      "sha256": "f14d7c47f8764c19f5930d23cb2412d54418a3f2236e00a1be1f1f8e7dfbf52a"
+      "sha256": "8f4f4feb24361b628d3069d7b44bfe5427d1a80aad36299bca472c91a42f3b87",
+      "bytes": 238852,
+      "privacy_issues": []
     },
     {
       "file": "改善後_聯合改善12公尺.fsm",
-      "decoded_bytes": 4463727,
-      "issues": [],
-      "sha256": "fecc2dbc56904cda82bc46d57bf397a5b6e63b2a76e959550243e9d8b3b43610"
+      "sha256": "600bf527ad5eeed31c0730eb626063f6420214c019d9283e5948b390686c7967",
+      "bytes": 238872,
+      "privacy_issues": []
+    },
+    {
+      "file": "循環物流_實驗完整結果.fsm",
+      "sha256": "8b269b39a72f03550445ef687bd98ec4f4989ad6274669d9fdfb9f40c7dbacf7",
+      "bytes": 238901,
+      "privacy_issues": []
+    },
+    {
+      "file": "歷史V8_實驗完整結果.fsm",
+      "sha256": "9874f77c9bb33af8dd6c976b6f80c9cd4e041d884049f193b36d8c58bdbb3c4c",
+      "bytes": 185254,
+      "privacy_issues": []
+    },
+    {
+      "file": "歷史V8_實驗完整結果.sqlite",
+      "sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e",
+      "bytes": 2760704,
+      "privacy_issues": []
     }
   ],
-  "regression": {
-    "scenario": "S1 short daily peaks",
-    "policies": [
-      "P0 existing, 1 metre original buffer",
-      "P4 joint control, 12 metre buffer"
-    ],
-    "random_seed": 101,
-    "checkpoints_seconds": [
-      86400,
-      604800
-    ],
-    "original_vs_portable_exact_equal": true,
-    "numeric_values_compared": 58000,
-    "readbacks": [
-      "MeasureRun",
-      "MeasureValidationV8",
-      "MeasurePoolV8"
-    ],
-    "new_runtime_console_output": false,
-    "note": "SDK session already contained model-switch save reminders; runtime console did not increase. Separate fresh GUI processes had empty consoles."
+  "fresh_GUI": {
+    "time_seconds": 0,
+    "running": false,
+    "perspective_images": 10,
+    "console_messages": 0
   },
-  "fresh_gui": {
-    "demo_time_seconds": 116100,
-    "dashboard_fields": 40,
-    "native_3d_capture_created": true,
-    "console_empty": true,
-    "main_experiments_complete": 1350,
-    "additional_precision_complete": 570,
-    "precision_preview_including_reused": 600,
-    "performance_measures": 9
+  "geometry": {
+    "conveyors": 27,
+    "exact_planned_endpoints": 26,
+    "native_snapped_handoffs": 1,
+    "snapped_terminal_overlaps_merge_platform": true
   },
-  "database_tables_all_rows_and_values_identical": [
-    {
-      "table": "__experiment_results__",
-      "rows": 1,
-      "identical": true
-    },
-    {
-      "table": "parameters",
-      "rows": 5,
-      "identical": true
-    },
-    {
-      "table": "scenarios",
-      "rows": 45,
-      "identical": true
-    },
-    {
-      "table": "parameter_values",
-      "rows": 225,
-      "identical": true
-    },
-    {
-      "table": "tasks",
-      "rows": 1920,
-      "identical": true
-    },
-    {
-      "table": "jobs",
-      "rows": 2,
-      "identical": true
-    },
-    {
-      "table": "runs",
-      "rows": 2,
-      "identical": true
-    },
-    {
-      "table": "run_task_history",
-      "rows": 1950,
-      "identical": true
-    },
-    {
-      "table": "job_task_status",
-      "rows": 1920,
-      "identical": true
-    },
-    {
-      "table": "id_paths",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "output_tables",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "table_columns",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "color_palettes",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "statistics",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "statistics_data",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "state_files",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "pfms",
-      "rows": 9,
-      "identical": true
-    },
-    {
-      "table": "pfm_report_preferences",
-      "rows": 9,
-      "identical": true
-    },
-    {
-      "table": "pfm_report_correlations",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "pfm_values",
-      "rows": 17280,
-      "identical": true
-    },
-    {
-      "table": "console_output",
-      "rows": 1920,
-      "identical": true
-    },
-    {
-      "table": "filters",
-      "rows": 0,
-      "identical": true
-    },
-    {
-      "table": "filter_results",
-      "rows": 0,
-      "identical": true
-    }
-  ],
+  "historical_database": {
+    "version": "V8",
+    "job_status_counts": [
+      [
+        1,
+        4,
+        1350
+      ],
+      [
+        2,
+        4,
+        570
+      ]
+    ],
+    "unchanged_sha256": "91dd7a11a7e7bc83423995bab4d1bd0a80f8163715205c8b7a203f509e88515e"
+  },
+  "current_formal_experiment_results": "Not completed. Automatic experiment entry scripts disabled; no V10 aggregate data published.",
   "limitations": [
-    "Rule-based privacy checks are not a universal guarantee.",
-    "Requires a separately licensed FlexSim 2027 installation.",
-    "No new formal DOE results; regression checks do not increase the published 1920 unique experiments.",
-    "No field calibration or positive investment-return claim is added."
+    "Static inspection does not certify the final model under load or prove absence of navigation deadlock.",
+    "V8 numerical results, investment conclusions, slides and video do not validate V10.",
+    "Conveyor supports, workstations, mezzanine and wash housings use teaching dimensions, not surveyed building or supplier CAD.",
+    "A native transfer snaps one endpoint by at most 0.2351 m per coordinate; the real terminal belt strip intersects the receiving workcell.",
+    "Additional conveyor motors assume 0.12 kW each; no manufacturer calibration or new ROI conclusion.",
+    "Privacy checks are rule based and are not an absolute guarantee."
   ],
-  "visual_revision": "V9 中文場景，2026-10-30；另見中文場景更新驗收.json。計算版本仍為V8。"
+  "static_reopen_reset": [
+    {
+      "file": "循環物流_3D展示.fsm",
+      "time_seconds": 0,
+      "running": false,
+      "conveyors": 27,
+      "workers": 5,
+      "same_geometry_after_reset": true,
+      "queue_capacities": [
+        24,
+        8,
+        8
+      ],
+      "new_console_messages": 0
+    },
+    {
+      "file": "循環物流_實驗完整結果.fsm",
+      "time_seconds": 0,
+      "running": false,
+      "conveyors": 27,
+      "workers": 5,
+      "same_geometry_after_reset": true,
+      "queue_capacities": [
+        24,
+        8,
+        8
+      ],
+      "new_console_messages": 0
+    },
+    {
+      "file": "改善前_現況.fsm",
+      "time_seconds": 0,
+      "running": false,
+      "conveyors": 27,
+      "workers": 5,
+      "same_geometry_after_reset": true,
+      "queue_capacities": [
+        24,
+        8,
+        8
+      ],
+      "new_console_messages": 0
+    },
+    {
+      "file": "改善後_聯合改善12公尺.fsm",
+      "time_seconds": 0,
+      "running": false,
+      "conveyors": 27,
+      "workers": 5,
+      "same_geometry_after_reset": true,
+      "queue_capacities": [
+        24,
+        8,
+        8
+      ],
+      "new_console_messages": 0
+    }
+  ],
+  "historical_pair_native_reopen": {
+    "time_seconds": 0,
+    "running": false,
+    "native_completed_counts": [
+      1350,
+      570
+    ],
+    "model_version": "V8_TRANSFER_SYNC_ADMISSION_POOL",
+    "unique_total": 1920
+  }
 }

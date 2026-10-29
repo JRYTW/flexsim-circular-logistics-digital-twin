@@ -1,0 +1,576 @@
+{
+  "configuration": "S1/P4/12m",
+  "conveyors": [
+    {
+      "name": "入庫輸送帶",
+      "start": [
+        2,
+        0,
+        1
+      ],
+      "end": [
+        9.0,
+        0.0,
+        1
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 7,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "商品輸送帶",
+      "start": [
+        13,
+        0,
+        1
+      ],
+      "end": [
+        27.0,
+        0.0,
+        1
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 14,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "空箱爬升輸送帶",
+      "start": [
+        12,
+        3,
+        1
+      ],
+      "end": [
+        24.0,
+        3.0,
+        5
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 12,
+      "rise_m": 4,
+      "incline_deg": 18.43494882292201,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "重力緩衝區",
+      "start": [
+        24,
+        3,
+        5
+      ],
+      "end": [
+        36.0,
+        3.0,
+        5
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 12,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "風乾輸送段",
+      "start": [
+        40,
+        3,
+        5
+      ],
+      "end": [
+        46.0,
+        3.0,
+        5
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 6,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "空箱回流輸送帶",
+      "start": [
+        52,
+        3,
+        5
+      ],
+      "end": [
+        62.0,
+        3.0,
+        1
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 10,
+      "rise_m": -4,
+      "incline_deg": 21.80140948635181,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "合格商品輸送帶",
+      "start": [
+        49,
+        0,
+        1
+      ],
+      "end": [
+        58.0,
+        0.0,
+        1
+      ],
+      "width_m": 0.5,
+      "horizontal_m": 9,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_拆包空箱側送",
+      "start": [
+        11.5,
+        0.9,
+        1
+      ],
+      "end": [
+        11.999999999999998,
+        3.000000000000001,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 2.1587033144922905,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 1.7763568394002505e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_品質檢查至A級",
+      "start": [
+        31,
+        0.8,
+        1
+      ],
+      "end": [
+        43.5,
+        6.000000000000004,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 13.538463723776047,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 4.440892098500626e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_品質檢查至B級",
+      "start": [
+        31,
+        0,
+        1
+      ],
+      "end": [
+        40.0,
+        0.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 9,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_品質檢查至C級一",
+      "start": [
+        31,
+        -0.8,
+        1
+      ],
+      "end": [
+        34.0,
+        -3.0000000000000018,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 3.7202150475476548,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 1.7763568394002505e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_品質檢查至C級二",
+      "start": [
+        34,
+        -3,
+        1
+      ],
+      "end": [
+        33.99999999999999,
+        -8.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 5,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 7.105427357601002e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_品質檢查至C級三",
+      "start": [
+        34,
+        -8,
+        1
+      ],
+      "end": [
+        43.5,
+        -8.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 9.5,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_B級一站供料",
+      "start": [
+        42,
+        0.35,
+        1
+      ],
+      "end": [
+        43.5,
+        1.5000000000000009,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 1.8901058171435798,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 8.881784197001252e-16,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_B級二站供料",
+      "start": [
+        42,
+        -0.35,
+        1
+      ],
+      "end": [
+        43.5,
+        -1.5000000000000009,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 1.8901058171435798,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 8.881784197001252e-16,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_A級商品合流",
+      "start": [
+        46.5,
+        6,
+        1
+      ],
+      "end": [
+        46.92399915200254,
+        1.76499947000159,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 4.256172549367059,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0.23500052999840992,
+      "native_fixed_resource_snap": true,
+      "terminal_overlaps_merge_platform": true,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_B級一站商品合流",
+      "start": [
+        46.5,
+        1.5,
+        1
+      ],
+      "end": [
+        47.0,
+        0.6999999999999994,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 0.9433981132056605,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 5.551115123125783e-16,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_B級二站商品合流",
+      "start": [
+        46.5,
+        -1.5,
+        1
+      ],
+      "end": [
+        47.0,
+        -0.6999999999999994,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 0.9433981132056605,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 5.551115123125783e-16,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_C級回收輸送",
+      "start": [
+        46.5,
+        -8,
+        1
+      ],
+      "end": [
+        52.0,
+        -8.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 5.5,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0.0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_商品入包裝",
+      "start": [
+        60,
+        0,
+        1
+      ],
+      "end": [
+        64.0,
+        0.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 4,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_包裝後出庫",
+      "start": [
+        67,
+        0,
+        1
+      ],
+      "end": [
+        69.0,
+        0.0,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 2,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_新單商品補料",
+      "start": [
+        59,
+        -4,
+        1
+      ],
+      "end": [
+        58.99999999999999,
+        -0.5,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 3.5,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 7.105427357601002e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_風乾至空箱檢驗",
+      "start": [
+        46,
+        3,
+        5
+      ],
+      "end": [
+        48.0,
+        3.0,
+        5
+      ],
+      "width_m": 1,
+      "horizontal_m": 2,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 0,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_空箱入包裝",
+      "start": [
+        62,
+        3,
+        1
+      ],
+      "end": [
+        65.0,
+        1.4999999999999984,
+        1
+      ],
+      "width_m": 1,
+      "horizontal_m": 3.3541019662496847,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 1.5543122344752192e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_備援清洗供料",
+      "start": [
+        37,
+        3.5,
+        5
+      ],
+      "end": [
+        37.99999999999999,
+        7.000000000000002,
+        5
+      ],
+      "width_m": 1,
+      "horizontal_m": 3.640054944640259,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 7.105427357601002e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_備援清洗合流",
+      "start": [
+        40,
+        7,
+        5
+      ],
+      "end": [
+        39.99999999999999,
+        3.3,
+        5
+      ],
+      "width_m": 1,
+      "horizontal_m": 3.7,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 7.105427357601002e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    },
+    {
+      "name": "V10_不合格循環箱回收",
+      "start": [
+        49,
+        4.2,
+        5
+      ],
+      "end": [
+        50.0,
+        7.000000000000002,
+        5
+      ],
+      "width_m": 1,
+      "horizontal_m": 2.973213749463701,
+      "rise_m": 0,
+      "incline_deg": 0.0,
+      "planned_endpoint_max_coordinate_difference_m": 1.7763568394002505e-15,
+      "native_fixed_resource_snap": false,
+      "terminal_overlaps_merge_platform": null,
+      "path_length_error_m": 0.0
+    }
+  ],
+  "pass": true,
+  "exact_planned_endpoints": 26,
+  "native_snapped_handoffs": 1,
+  "interpretation": "26 conveyor endpoints match the placement plan within 1 micrometre numerically. One A-grade terminal auto-snaps by at most 0.2351 m per coordinate and its actual belt strip overlaps the merge platform; this is not an open gap. All 27 native path lengths agree with their slope geometry. Numerical tolerance is not field CAD accuracy."
+}

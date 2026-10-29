@@ -97,7 +97,8 @@ NATIVE_FILES = {
     '模型/改善前_現況.fsm',
     '模型/改善後_聯合改善12公尺.fsm',
     '模型/循環物流_實驗完整結果.fsm',
-    '模型/循環物流_實驗完整結果.sqlite',
+    '模型/歷史V8_實驗完整結果.fsm',
+    '模型/歷史V8_實驗完整結果.sqlite',
 }
 
 def inspect_binary_text(name, data, issues, skip_email=False):
