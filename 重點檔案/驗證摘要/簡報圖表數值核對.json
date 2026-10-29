@@ -21,10 +21,11 @@
   "heatmap_values": 28,
   "heatmap_max_rounding_error": 0.004366925064601901,
   "all_source_data_match": true,
-  "native_tables": 6,
+  "native_tables": 7,
   "native_charts": 3,
   "slide_count": 15,
   "render_engine": "artifact-tool final PPTX reimport",
   "native_PowerPoint_opening_tested": false,
-  "heatmap_scope": "seed101; cumulative start-to-116100s; processing and blocked have distinct color scales"
+  "heatmap_scope": "seed101; cumulative start-to-116100s; processing and blocked have distinct color scales",
+  "terminology_reading_page_added": true
 }
