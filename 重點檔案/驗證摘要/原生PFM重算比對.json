@@ -1,7 +1,0 @@
-{
-  "checked_values": 15360,
-  "expected_values": 15360,
-  "max_abs_difference": 0.0,
-  "all_within_1e_7": true,
-  "native_total_pfm_values": 17280
-}
