@@ -1,6 +1,6 @@
-原始欄名,中文意思,單位與限制
-scenario,需求情境代碼,S0平日；S1短波尖峰；S1_4.5較高短波尖峰
-prescription,改善方案代碼,P0現況、P1第二清洗機、P2僅緩衝、P3外包、P4聯合改善
+﻿原始欄名,中文意思,單位與限制
+scenario,需求情境代碼,平日基準情境（S0）；短波尖峰情境（S1）；較高短波尖峰情境（S1_4.5）。
+prescription,改善方案代碼,維持現況方案（P0）；增設第二台清洗機方案（P1）；緩衝長度調整方案（P2）；外包清洗方案（P3）；聯合改善方案（P4）。
 buffer_m,緩衝長度,公尺；不是分鐘；0表示真旁路
 replication,重複模擬編號,同一配置的第幾次完整模擬
 seed,隨機種子,控制隨機序列以便重現
@@ -14,7 +14,7 @@ tote_scrap,循環箱報廢量,箱；與商品報廢不同
 course_pass_ratio_mixed_units,課程混合通過比,比值；混合商品、箱與外包事件，可超過1，不作履約決策
 returned_goods_resolution_ratio,退貨商品流量結案比,比值；跨期在製量可能使其略高於1，不是精確批次追蹤
 returned_goods_end_wip,期末尚未完成的退貨商品,件；計算保守結案下界用
-cohort_completion_lower_bound_pct,退貨批次結案率保守下界,%；以全部期末退貨在製量扣除，非100%精確批次追蹤
+cohort_completion_lower_bound_pct,退貨批次結案率保守下界,%；1−期末全部退貨商品在製量／觀察期退貨到達量，最低為0；含報廢結案，不等於出貨率。
 all_goods_resolution_ratio,全部商品流量結案比,比值；包含新單商品與跨期影響
 separator_blocked_pct,拆包設備阻塞時間占比,%；觀察期被下游擋住的時間比例
 washer1_util_pct,第一台清洗機加工占比,%；觀察期處於加工的時間比例
@@ -33,7 +33,7 @@ qtime_mean_s,平均檢查前等待,秒；外部到達至開始品質檢查
 qtime_max_s,最長已觀測完整等待,秒；不能據此斷言所有未完成需求都不超時
 over4h,等待超過4小時的觀測事件,件；開始品質檢查時入帳
 over24h,等待超過24小時的觀測事件,件；尚未開始檢查者未取得完整等待時間
-qtime_loss_ntd,超24小時貶值損失,新臺幣元；按模型損失設定計算，主實驗全為0
+qtime_loss_ntd,超24小時貶值損失,新臺幣元；暖機後開始檢查時，等待超24小時按商品價值800×貶值率15%計算。
 grade_A,A級商品數,件；較簡單整理
 grade_B,B級商品數,件；需整新
 grade_C,C級商品數,件；拆解報廢
@@ -65,6 +65,15 @@ totes_wip_end,期末箱類邏輯工作量,同上，不等於實體資產占用�
 asset_uses_full,全時段資產使用帳,次；包含暖機，不能直接與觀察期出庫相減
 asset_replacements_full,全時段資產替換帳,次；包含暖機，依資產帳讀回
 checks_max_abs,守恆與防呆殘差最大絕對值,應為0；不是百分比
+completed_shipment_carbon_kg,已出庫量基準淨減碳,公斤二氧化碳當量；出庫量×0.35扣電力與外包排放
+completed_shipment_carbon_rate_pct,已出庫量基準減碳率,%；上項除以已出庫量×0.35再乘100
+completed_shipment_cost_saving_pct,已出庫量基準成本節約率,%；1減循環成本/（出庫量×18）再乘100
+energy_kwh_per_return,每件需求總用電,度電／件；清洗與輸送用電除退貨需求。
+physical_pool_max,最高同時占用實體循環箱,箱；全七日最高值，上限500。
+pending_requests_end,期末外部待入場需求,件；未取得實體箱資產。
+qa_queue_area_abs_error,待檢隊列時間積分核對誤差,件秒；原生平均×觀察秒數與獨立逐件積分差。
+qa_queue_warmup_carry_area,跨暖機待檢完成者的暖機前面積,件秒；是期間邊界調整量，不是誤差。
+washer_completion_boundary_error,清洗完成數與加工時間的邊界差,箱；單機前後邊界差不超過1，雙機不超過2。
 n,重複樣本數,比較表；例如30次完整模擬
 metric,指標原欄名,比較表；用主實驗68欄對照表查意思
 mean,多次重複的平均值,單位依指標而定；不是單次運行
@@ -74,6 +83,3 @@ replications,規劃重複次數,實驗矩陣；每個配置的重複數
 warmup_s,暖機長度,秒；86400秒為1日
 stop_s,總運行停止時間,秒；604800秒為7日，包含暖機
 seed_rule,隨機種子規則,種子101＋37×重複索引，索引0到29
-completed_shipment_carbon_kg,已出庫量基準淨減碳,公斤二氧化碳當量；出庫量×0.35扣電力與外包排放
-completed_shipment_carbon_rate_pct,已出庫量基準減碳率,%；上項除以已出庫量×0.35再乘100
-completed_shipment_cost_saving_pct,已出庫量基準成本節約率,%；1減循環成本/（出庫量×18）再乘100

@@ -18,3 +18,7 @@
 .venv/
 node_modules/
 __pycache__/
+
+*.sqlite-*
+*.db-*
+模型/experiment_exports/
