@@ -1,5 +1,6 @@
 *.fsm
 !模型/循環物流.fsm
+!模型/循環物流_改善前.fsm
 *.sqlite
 *.db
 *_autosave.*
